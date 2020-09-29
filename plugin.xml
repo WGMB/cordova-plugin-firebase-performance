@@ -14,14 +14,17 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <engine name="cordova-android" version=">=8.0.0"/>
         <engine name="cordova-ios" version=">=5.0.0"/>
     </engines>
-
+           
    <platform name="ios">
         <header-file src="src/ios/Firebase/Firebase.h" />
-           <framework custom="true" src="src/ios/Firebase/Performance/GoogleToolboxForMac.xcframework" /> 
-          <framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />		
-          <framework custom="true" src="src/ios/Firebase/Performance/FirebaseABTesting.xcframework" />				
-          <framework custom="true" src="src/ios/Firebase/Performance/GTMSessionFetcher.xcframework" />		 
-         <framework custom="true" src="src/ios/Firebase/Performance/Protobuf.xcframework" /> 
+              <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods>
+                <pod 'Firebase/Performance' />
+            </pods>
+        </podspec>
     </platform> 
 
     <platform name="android">
