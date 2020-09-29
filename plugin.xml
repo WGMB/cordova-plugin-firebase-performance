@@ -1,0 +1,32 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-firebase-performance"
+      version="1.0.0">
+
+    <name>cordova-plugin-firebase-performance</name>
+    <description>Cordova plugin for Firebase Performance</description>
+    <license>MIT</license>
+    <keywords>cordova</keywords>
+    <repo>https://github.com/WGMB/cordova-plugin-firebase-performance</repo>
+    <issue>https://github.com/WGMB/cordova-plugin-firebase-performance/issues</issue>
+
+    <engines>
+        <engine name="cordova-android" version=">=8.0.0"/>
+        <engine name="cordova-ios" version=">=5.0.0"/>
+    </engines>
+
+   <platform name="ios">
+        <header-file src="src/ios/Firebase/Firebase.h" />
+        <framework custom="true" src="src/ios/Firebase/Performance/GoogleToolboxForMac.framework" />
+        <framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />
+        <framework custom="true" src="src/ios/Firebase/Performance/FirebaseABTesting.framework" />
+        <framework custom="true" src="src/ios/Firebase/Performance/GTMSessionFetcher.framework" />
+    </platform> 
+
+    <platform name="android">
+        <preference name="FIREBASE_PERFORMANCE_VERSION" default="19.0.+"/>
+
+        <framework src="com.google.firebase:firebase-perf:$FIREBASE_PERFORMANCE_VERSION" />
+    </platform>
+
+</plugin>
