@@ -17,11 +17,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
    <platform name="ios">
         <header-file src="src/ios/Firebase/Firebase.h" />
-          <framework custom="true" src="src/ios/Firebase/Performance/GoogleToolboxForMac.xcframework" />		
-         <framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />
-         <framework custom="true" src="src/ios/Firebase/Performance/FirebaseABTesting.xcframework" />		
-         <framework custom="true" src="src/ios/Firebase/Performance/GTMSessionFetcher.xcframework" />
-          <framework custom="true" src="src/ios/Firebase/Performance/Protobuf.xcframework" />
+          <framework custom="true" src="src/ios/Firebase/Performance/GoogleToolboxForMac.xcframework" />
     </platform> 
 
     <platform name="android">
