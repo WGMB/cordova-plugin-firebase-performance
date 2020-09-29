@@ -21,7 +21,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
           <framework custom="true" src="src/ios/Firebase/Performance/FirebasePerformance.framework" />		
           <framework custom="true" src="src/ios/Firebase/Performance/FirebaseABTesting.xcframework" />				
           <framework custom="true" src="src/ios/Firebase/Performance/GTMSessionFetcher.xcframework" />		
-           <framework custom="true" src="src/ios/Firebase/Performance/Protobuf.xcframework" />
+          <framework custom="true" src="src/ios/Firebase/Performance/Protobuf.xcframework" />
+          <framework custom="true" src="src/ios/Firebase/Performance/GoogleUtilities.xcframework" />
     </platform> 
 
     <platform name="android">
