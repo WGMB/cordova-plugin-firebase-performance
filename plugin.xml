@@ -29,7 +29,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </platform> 
 
     <platform name="android">
-        <preference name="FIREBASE_PERFORMANCE_VERSION" default="20.0.+"/>
+        <preference name="FIREBASE_PERFORMANCE_VERSION" default="20.1.+"/>
 
         <framework src="com.google.firebase:firebase-perf:$FIREBASE_PERFORMANCE_VERSION" />
     </platform>
